@@ -23,7 +23,11 @@
     position: fixed !important;
     left: 0;
     flex-wrap: wrap;
-    place-content: center; 
+    place-content: center;
+    /* ensure icons inside rotated container are visually centered and aligned */
+    display: flex; /* keep flex context for centering */
+    align-items: center; /* vertical centering in rotated layout */
+    justify-content: center; /* horizontal centering */
 }
 
 .scrollerWrap-1IAIlv {
@@ -34,11 +38,17 @@
     transform: rotate(90deg);
     position: unset;
     width: var(--ServerSize);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #app-mount .guilds_c48ade .listItem__650eb {
     width: unset;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
